@@ -7,7 +7,7 @@
 SET BAUD=115200
 
 --Set Arduino COM Port
-SET COM=COM3
+SET COM=COM1
 
 ..\avrdude -C..\avrdude.conf -v -patmega328p -carduino -P%COM% -b%BAUD% -Uflash:r:flash.hex:i
 
